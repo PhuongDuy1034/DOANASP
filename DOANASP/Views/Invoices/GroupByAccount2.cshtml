@@ -1,0 +1,71 @@
+﻿@model IEnumerable<DOANASP.Models.Invoices>
+
+@{ 
+    ViewData["Title"] = "Hóa Đơn Theo Tài khoản ";
+    var invoiceGroups = Model.GroupBy(i => i.Account.Username).OrderBy(i => i.Key);
+
+}
+<h1>Hóa Đơn Theo Tài khoản</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(Model => Model.Code)
+            </th>
+            <th>
+                @Html.DisplayNameFor(Model => Model.IssuedDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(Model => Model.ShippingAddress)
+            </th>
+            <th>
+                @Html.DisplayNameFor(Model => Model.ShippingPhone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(Model => Model.Total)
+            </th>
+            <th>
+                @Html.DisplayNameFor(Model => Model.Status)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var group in invoiceGroups)
+        {
+
+            @foreach (var item in group)
+            {
+
+
+                <tr >
+                    @if (item == group.First())
+                    {
+                    <td rowspan="@group.Count()" class="font-weight-bold">
+                        @Html.DisplayFor(modelIem => group.Key) (@group.Count())
+                    </td>
+                    }
+
+                    <td>
+                        @Html.DisplayFor(modelIem => item.Code)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelIem => item.IssuedDate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelIem => item.ShippingAddress)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelIem => item.ShippingPhone)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelIem => item.Total)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelIem => item.Status)
+                    </td>
+                </tr>
+             
+            }
+        }
+    </tbody>
+</table>

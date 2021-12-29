@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewData["Title"] = "Home Page";
+}
+@model DOANASP.Models.Account
+<!-- customer login start -->
+<!--login area start-->
+<div class="col-lg-6 col-md-6">
+    <div class="account_form">
+        <h2>login</h2>
+        <form asp-controller="Accounts" asp-action="Login" method="post">
+            <p>
+                <label asp-for="Username"></label>
+                <input asp-for="Username" class="from-control">
+            </p>
+            <p>
+                <label asp-for="Password"></label>
+                <input asp-for="Password" class="from-control">
+            </p>
+
+            <div class="login_submit">
+                <button type="submit">login</button>
+                <label for="remember">
+                    <input id="remember" type="checkbox">
+                    Remember me
+                </label>
+                <a href="#">Lost your password?</a>
+            </div>
+            <p>@ViewBag.error</p>
+        </form>
+    </div>
+</div>
+<!--login area start-->

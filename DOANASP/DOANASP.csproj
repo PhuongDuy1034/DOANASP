@@ -1,0 +1,99 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20211103094805_DoanASP.cs" />
+    <Compile Remove="Migrations\20211103094805_DoanASP.Designer.cs" />
+    <Compile Remove="Migrations\20211109063033_Incoices.cs" />
+    <Compile Remove="Migrations\20211109063033_Incoices.Designer.cs" />
+    <Compile Remove="Migrations\20211112130206_Products.cs" />
+    <Compile Remove="Migrations\20211112130206_Products.Designer.cs" />
+    <Compile Remove="Migrations\20211112132415_Invoices.cs" />
+    <Compile Remove="Migrations\20211112132415_Invoices.Designer.cs" />
+    <Compile Remove="Migrations\20211112132536_Invoices.cs" />
+    <Compile Remove="Migrations\20211112132536_Invoices.Designer.cs" />
+    <Compile Remove="Migrations\20211112132722_Invoices.cs" />
+    <Compile Remove="Migrations\20211112132722_Invoices.Designer.cs" />
+    <Compile Remove="Migrations\20211112134009_Invoices.cs" />
+    <Compile Remove="Migrations\20211112134009_Invoices.Designer.cs" />
+    <Compile Remove="Migrations\20211112134956_Invoices.cs" />
+    <Compile Remove="Migrations\20211112134956_Invoices.Designer.cs" />
+    <Compile Remove="Migrations\20211112135046_Invoice.cs" />
+    <Compile Remove="Migrations\20211112135046_Invoice.Designer.cs" />
+    <Compile Remove="Migrations\20211112135211_Invoices.cs" />
+    <Compile Remove="Migrations\20211112135211_Invoices.Designer.cs" />
+    <Compile Remove="Migrations\20211113054055_Invoices.cs" />
+    <Compile Remove="Migrations\20211113054055_Invoices.Designer.cs" />
+    <Compile Remove="Migrations\20211113054921_Invoices.cs" />
+    <Compile Remove="Migrations\20211113054921_Invoices.Designer.cs" />
+    <Compile Remove="Migrations\20211113054943_Products.cs" />
+    <Compile Remove="Migrations\20211113054943_Products.Designer.cs" />
+    <Compile Remove="Migrations\20211113055445_DOANASP.cs" />
+    <Compile Remove="Migrations\20211113055445_DOANASP.Designer.cs" />
+    <Compile Remove="Migrations\20211113055550_DOANASP1.cs" />
+    <Compile Remove="Migrations\20211113055550_DOANASP1.Designer.cs" />
+    <Compile Remove="Migrations\20211113055948_Invoices.cs" />
+    <Compile Remove="Migrations\20211113055948_Invoices.Designer.cs" />
+    <Compile Remove="Migrations\20211113060920_Invoices.cs" />
+    <Compile Remove="Migrations\20211113060920_Invoices.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.12" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.12">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\admin\js\bootstrap.min.js" />
+    <None Include="wwwroot\admin\js\jquery-3.2.1.min.js" />
+    <None Include="wwwroot\admin\js\main.js" />
+    <None Include="wwwroot\admin\js\plugins\bootstrap-datepicker.min.js" />
+    <None Include="wwwroot\admin\js\plugins\bootstrap-notify.min.js" />
+    <None Include="wwwroot\admin\js\plugins\chart.js" />
+    <None Include="wwwroot\admin\js\plugins\dataTables.bootstrap.min.js" />
+    <None Include="wwwroot\admin\js\plugins\fullcalendar.min.js" />
+    <None Include="wwwroot\admin\js\plugins\jquery-ui.custom.min.js" />
+    <None Include="wwwroot\admin\js\plugins\jquery.dataTables.min.js" />
+    <None Include="wwwroot\admin\js\plugins\jquery.vmap.min.js" />
+    <None Include="wwwroot\admin\js\plugins\jquery.vmap.sampledata.js" />
+    <None Include="wwwroot\admin\js\plugins\jquery.vmap.world.js" />
+    <None Include="wwwroot\admin\js\plugins\moment.min.js" />
+    <None Include="wwwroot\admin\js\plugins\pace.min.js" />
+    <None Include="wwwroot\admin\js\plugins\select2.min.js" />
+    <None Include="wwwroot\admin\js\plugins\sweetalert.min.js" />
+    <None Include="wwwroot\admin\js\popper.min.js" />
+    <None Include="wwwroot\assets\js\plugins\bootstrap-datepicker.min.js" />
+    <None Include="wwwroot\assets\js\plugins\bootstrap-notify.min.js" />
+    <None Include="wwwroot\assets\js\plugins\chart.js" />
+    <None Include="wwwroot\assets\js\plugins\dataTables.bootstrap.min.js" />
+    <None Include="wwwroot\assets\js\plugins\fullcalendar.min.js" />
+    <None Include="wwwroot\assets\js\plugins\jquery-ui.custom.min.js" />
+    <None Include="wwwroot\assets\js\plugins\jquery.dataTables.min.js" />
+    <None Include="wwwroot\assets\js\plugins\jquery.vmap.min.js" />
+    <None Include="wwwroot\assets\js\plugins\jquery.vmap.sampledata.js" />
+    <None Include="wwwroot\assets\js\plugins\jquery.vmap.world.js" />
+    <None Include="wwwroot\assets\js\plugins\moment.min.js" />
+    <None Include="wwwroot\assets\js\plugins\pace.min.js" />
+    <None Include="wwwroot\assets\js\plugins\select2.min.js" />
+    <None Include="wwwroot\assets\js\plugins\sweetalert.min.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="wwwroot\assets\js\bootstrap.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\js\main.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>
