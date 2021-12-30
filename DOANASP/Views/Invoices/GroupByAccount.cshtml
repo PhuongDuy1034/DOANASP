@@ -1,9 +1,12 @@
 ﻿@model IEnumerable<DOANASP.Models.Invoices>
 
-@{ 
+@{
     ViewData["Title"] = "Hóa Đơn Theo Tài khoản ";
     var invoiceGroups = Model.GroupBy(i => i.Account.Username).OrderBy(i => i.Key);
 
+}
+@{
+    Layout = "_LayoutAdmin";
 }
 <h1>Hóa Đơn Theo Tài khoản</h1>
 <table class="table">
@@ -30,37 +33,37 @@
         </tr>
     </thead>
     <tbody>
-        @foreach(var group in invoiceGroups)
-            {
-                <tr class="table-primary py-1">
-                    <td colspan="7">
-                        @Html.DisplayFor(modelIem=> group.Key)   
-                    </td>
+        @foreach (var group in invoiceGroups)
+        {
+            <tr class="table-primary py-1">
+                <td colspan="7">
+                    @Html.DisplayFor(modelIem => group.Key)
+                </td>
 
+            </tr>
+            @foreach (var item in group)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelIem => item.Code)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelIem => item.IssuedDate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelIem => item.ShippingAddress)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelIem => item.ShippingPhone)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelIem => item.Total)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelIem => item.Status)
+                    </td>
                 </tr>
-                @foreach(var item in group)
-                {
-                    <tr>
-                        <td>
-                            @Html.DisplayFor(modelIem => item.Code)
-                        </td>
-                         <td>
-                            @Html.DisplayFor(modelIem => item.IssuedDate)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelIem => item.ShippingAddress)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelIem => item.ShippingPhone)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelIem => item.Total)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelIem => item.Status)
-                        </td>
-                    </tr>
-                }
             }
+        }
     </tbody>
 </table>

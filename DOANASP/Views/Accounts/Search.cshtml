@@ -3,6 +3,9 @@
 @{
     ViewData["Title"] = "Index";
 }
+@{
+    Layout = "_LayoutAdmin";
+}
 <div>
     <p>
         <h3>Tìm Kiếm </h3>
@@ -13,11 +16,11 @@
 
         <p>
             <input type="search" placeholder="Enter name or email...." value="@ViewData["get"]" name="search" style="width:500px;" />
-            <input type="submit" value="Search" class="btn btn-primary" style="color:black"/>  |
+            <input type="submit" value="Search" class="btn btn-primary" style="color:black" />  |
             <a asp-action="Search">Tìm Lại</a>
         </p>
     </form>
- 
+
 </div>
 
 <table class="table">

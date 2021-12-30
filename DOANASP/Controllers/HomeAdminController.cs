@@ -8,12 +8,23 @@ namespace DOANASP.Controllers
 {
     public class HomeAdminController : Controller
     {
-        public IActionResult Indexadmin()
+        public IActionResult Index()
         {
+
+            if (HttpContext.Request.Cookies.ContainsKey("AccountUsername"))
+            {
+                ViewBag.AccountUsername = HttpContext.Request.Cookies["AccountUsername"].ToString();
+            }
             return View();
         }
-        public IActionResult Indextest()
+
+    }
+    public class ProfileController : Controller
+    {
+        public IActionResult Index()
         {
+
+
             return View();
         }
     }

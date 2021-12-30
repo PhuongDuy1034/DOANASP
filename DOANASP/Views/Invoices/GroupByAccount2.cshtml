@@ -1,9 +1,12 @@
 ﻿@model IEnumerable<DOANASP.Models.Invoices>
 
-@{ 
+@{
     ViewData["Title"] = "Hóa Đơn Theo Tài khoản ";
     var invoiceGroups = Model.GroupBy(i => i.Account.Username).OrderBy(i => i.Key);
 
+}
+@{
+    Layout = "_LayoutAdmin";
 }
 <h1>Hóa Đơn Theo Tài khoản</h1>
 <table class="table">
@@ -37,12 +40,12 @@
             {
 
 
-                <tr >
+                <tr>
                     @if (item == group.First())
                     {
-                    <td rowspan="@group.Count()" class="font-weight-bold">
-                        @Html.DisplayFor(modelIem => group.Key) (@group.Count())
-                    </td>
+                        <td rowspan="@group.Count()" class="font-weight-bold">
+                            @Html.DisplayFor(modelIem => group.Key) (@group.Count())
+                        </td>
                     }
 
                     <td>
@@ -64,7 +67,7 @@
                         @Html.DisplayFor(modelIem => item.Status)
                     </td>
                 </tr>
-             
+
             }
         }
     </tbody>

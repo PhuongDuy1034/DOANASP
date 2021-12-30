@@ -126,7 +126,6 @@ D:\ASPnet\DOAN\DOANASP\obj\Debug\net5.0\Razor\Views\Invoices\Delete.cshtml.g.cs
 D:\ASPnet\DOAN\DOANASP\obj\Debug\net5.0\Razor\Views\Invoices\Details.cshtml.g.cs
 D:\ASPnet\DOAN\DOANASP\obj\Debug\net5.0\Razor\Views\Invoices\Edit.cshtml.g.cs
 D:\ASPnet\DOAN\DOANASP\obj\Debug\net5.0\Razor\Views\Invoices\Index.cshtml.g.cs
-D:\ASPnet\DOAN\DOANASP\obj\Debug\net5.0\Razor\Views\Login\Index.cshtml.g.cs
 D:\ASPnet\DOAN\DOANASP\obj\Debug\net5.0\Razor\Views\Login\Privacy.cshtml.g.cs
 D:\ASPnet\DOAN\DOANASP\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
 D:\ASPnet\DOAN\DOANASP\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
@@ -186,7 +185,9 @@ D:\ASPnet\DOAN\DOANASP\obj\Debug\net5.0\Razor\Views\Invoices\ByAddress.cshtml.g.
 D:\ASPnet\DOAN\DOANASP\obj\Debug\net5.0\Razor\Views\Accounts\Search.cshtml.g.cs
 D:\ASPnet\DOAN\DOANASP\obj\Debug\net5.0\Razor\Views\Product\Search.cshtml.g.cs
 D:\ASPnet\DOAN\DOANASP\obj\Debug\net5.0\Razor\Views\Invoices\ByProduct.cshtml.g.cs
-D:\ASPnet\DOAN\DOANASP\obj\Debug\net5.0\Razor\Views\HomeAdmin\Indexadmin.cshtml.g.cs
-D:\ASPnet\DOAN\DOANASP\obj\Debug\net5.0\Razor\Views\HomeAdmin\Indextest.cshtml.g.cs
-D:\ASPnet\DOAN\DOANASP\obj\Debug\net5.0\Razor\Views\test\Index.cshtml.g.cs
 D:\ASPnet\DOAN\DOANASP\obj\Debug\net5.0\Razor\Views\Shared\_LayoutAdmin.cshtml.g.cs
+D:\ASPnet\DOAN\DOANASP\obj\Debug\net5.0\Razor\Views\Shared\_LayoutLogin.cshtml.g.cs
+D:\ASPnet\DOAN\DOANASP\obj\Debug\net5.0\Razor\Views\Login\IndexAdmin.cshtml.g.cs
+D:\ASPnet\DOAN\DOANASP\obj\Debug\net5.0\Razor\Views\HomeAdmin\Index.cshtml.g.cs
+D:\ASPnet\DOAN\DOANASP\obj\Debug\net5.0\Razor\Views\Login\IndexUser.cshtml.g.cs
+D:\ASPnet\DOAN\DOANASP\obj\Debug\net5.0\Razor\Views\Profile\Index.cshtml.g.cs

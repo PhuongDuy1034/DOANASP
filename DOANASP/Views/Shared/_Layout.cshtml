@@ -17,6 +17,7 @@
     <title>Coron - Fashion eCommerce Bootstrap4 Template</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <a href="D:\ASPnet\DOAN\DOANASP\Views\Shared\_Layout.cshtml">D:\ASPnet\DOAN\DOANASP\Views\Shared\_Layout.cshtml</a>
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="assets\img\favicon.png">
 
@@ -41,26 +42,31 @@
                     <div class="header_top">
                         <div class="row align-items-center">
                             <div class="col-lg-6 col-md-6">
-                                <div class="switcher">
-                                    <ul>
-                                        <li >
-                                           Welcome @username
-                                        </li>
-                                        <li>
-                                            <a asp-controller="Accounts" asp-action="Logout" >Logout</a>
-                                        </li>
-                                        
-                                    </ul>
+                                <div class="">
+                                    @if (@username == "Khách")
+                                    {
+                                   
+                                    }
+                                    else
+                                    {
+                                        <ul>
+                                            <li>
+                                                <h5> Welcome @username</h5>
+                                            </li>
+                                            <li>
+                                                <a asp-controller="Accounts" asp-action="Logout">Logout</a>
+                                            </li>
+
+                                        </ul>
+                                    }
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6">
                                 <div class="header_links">
                                     <ul>
                                        
-                                        <li><a href="wishlist.html" title="wishlist">My wishlist</a></li>
-                                        <li><a href="Accounts" title="My account">My account</a></li>
-                                        <li><a href="Cart" title="My cart">My cart</a></li>
-                                        <li><a href="Login" title="Login">Login</a></li>
+                                        <li><a href="/Login/IndexUser" title="Login">LOGIN WITH USER</a></li>
+                                        <li><a href="/Login/IndexAdmin" title="Login">LOGIN WITH ADMIN</a></li>
                                     </ul>
                                 </div>
                             </div>

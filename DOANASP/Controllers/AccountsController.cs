@@ -87,7 +87,7 @@ namespace DOANASP.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Login(string Username, string Password)
         {
-            Account account = _context.Accounts.Where(a => a.Username == Username && a.Password == Password ).FirstOrDefault();
+            Account account = _context.Accounts.Where(a => a.Username == Username && a.Password == Password && a.IsAdmin != true).FirstOrDefault();
             if (account != null)
             {
                 CookieOptions cookieOptions = new CookieOptions()
